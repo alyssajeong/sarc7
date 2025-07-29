@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
   background: linear-gradient(to right, #f8faff, #eef7ff);
   margin: 0;
   padding: 0;
@@ -72,6 +74,22 @@ pre {
   border-left: 4px solid #007acc;
   border-radius: 6px;
   overflow-x: auto;
-}
+  white-space: pre-wrap;
   word-wrap: break-word;
+}
 
+.button-link {
+  display: inline-block;
+  margin: 0.5em 0;
+  padding: 0.6em 1.2em;
+  background: #007acc;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.button-link:hover {
+  background: #005fa3;
+}
