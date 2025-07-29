@@ -1,32 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 body {
-  font-family: 'Rubik', sans-serif;
   margin: 0;
-  background: #fff8f5;
-  color: #333;
-  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  background: #fafbfc;
+  color: #2b2b2b;
 }
 
-.header {
-  background: linear-gradient(135deg, #88c0f4, #b7aef3);
-  color: #ffffff;
+.site-header {
+  background: #2c3e60;
+  color: white;
   padding: 2rem 1rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-.header h1 {
-  font-size: 3rem;
+.site-header h1 {
   margin: 0;
+  font-size: 2.5rem;
 }
-.header .subtitle {
-  font-size: 1.2rem;
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.85;
   margin-top: 0.5rem;
 }
 
-.wrapper {
+.container {
   display: flex;
-  flex-wrap: wrap;
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
@@ -34,60 +32,68 @@ body {
 }
 
 .left-column {
-  flex: 1 1 30%;
+  flex: 1;
+  max-width: 30%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
 .right-column {
-  flex: 1 1 65%;
+  flex: 2;
+  max-width: 70%;
   background: #ffffff;
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-.card {
+.box {
   background: #ffffff;
-  border-left: 5px solid #88c0f4;
-  border-radius: 12px;
+  border: 1px solid #dce1e7;
+  border-radius: 10px;
   padding: 1.5rem;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
 }
 
-h2, h3 {
-  color: #5b6ca9;
+h2 {
+  color: #2c3e60;
   margin-top: 0;
+}
+h3 {
+  color: #4d6280;
 }
 
 ul {
-  padding-left: 1.4rem;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+li {
+  margin-bottom: 0.5rem;
 }
 
 .button {
   display: inline-block;
-  background: #fa709a;
+  background: #4a90e2;
   color: white;
-  padding: 0.5rem 1.2rem;
-  border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
   margin-top: 0.5rem;
-  transition: all 0.2s ease-in-out;
+  margin-right: 0.5rem;
+  font-weight: 600;
 }
 .button:hover {
-  background: #f94c84;
-  transform: scale(1.05);
+  background: #3a78c2;
 }
 
 pre {
-  background: #f0f4ff;
+  background: #f4f6fa;
   padding: 1rem;
-  border-left: 4px solid #b7aef3;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   overflow-x: auto;
-  border-radius: 8px;
+  border-left: 4px solid #4a90e2;
+  border-radius: 6px;
 }
 
 img {
@@ -97,9 +103,9 @@ img {
 }
 
 footer {
-  background: #f6f8fb;
+  background: #f1f4f7;
   text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
-  color: #666;
+  color: #555;
 }
