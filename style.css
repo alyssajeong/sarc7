@@ -4,10 +4,6 @@
   text-align: center;
   padding: 2em 1em;
 }
-.header .logo {
-  height: 80px;
-  margin-bottom: 0.5em;
-}
 
 /* layout tweaks consistent with Bird‑Bench style */
 .wrapper {
