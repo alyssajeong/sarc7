@@ -1,31 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sarc7</title>
-  <link rel="stylesheet" href="main.css" />
+  <title>Sarc7: Sarcasm Dataset</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <h1>Sarc7</h1>
-  <p class="subtitle">Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques</p>
-</header>
+  <div class="header">
+    <h1>Sarc7</h1>
+    <p>Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques</p>
+  </div>
 
-<div class="container">
-  <!-- LEFT COLUMN -->
-  <aside class="left-column">
-    <section class="box">
-      <h2>About the Paper</h2>
-      <p>
-        Sarc7 introduces a benchmark for sarcasm detection and generation with seven nuanced sarcasm types. It includes emotion labels, gold/silver annotations, and multi-reference generations, making it a strong foundation for interpretability and multi-task NLP modeling.
-      </p>
-      <a class="button" href="data/cleaned_sarcasm_data.json" target="_blank">📥 Download Dataset</a>
-      <a class="button" href="docs/paper.pdf" target="_blank">📄 View Paper</a>
-    </section>
+  <div class="wrapper">
+    <div class="left-column">
+      <div class="about-box">
+        <h2>About the Paper</h2>
+        <p>
+          Sarc7 introduces a sarcasm benchmark with seven distinct sarcasm types, emotion-informed modeling, and a dataset annotated with nuanced pragmatic cues. The work combines classification and generation tasks and evaluates models across sarcasm subtasks to push sarcasm understanding beyond binary detection.
+        </p>
+        <a class="button-link" href="data/cleaned_sarcasm_data.json" target="_blank">📥 Download Dataset</a><br>
+        <a class="button-link" href="docs/paper.pdf" target="_blank">📄 Read the Paper</a>
+      </div>
 
-    <section class="box">
       <h2>Sarc7 Team</h2>
       <ul>
         <li>Lang Xiong</li>
@@ -36,9 +32,7 @@
         <li>Vasu Sharma</li>
         <li>Kevin Zhu</li>
       </ul>
-    </section>
 
-    <section class="box">
       <h2>Citation</h2>
       <pre>@article{xiong2025sarc7,
   title={Sarc7: Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques},
@@ -46,57 +40,43 @@
   journal={arXiv preprint arXiv:2506.00658},
   year={2025}
 }</pre>
-    </section>
-  </aside>
+    </div>
 
-  <!-- RIGHT COLUMN -->
-  <main class="right-column">
-    <section>
-      <h2>Abstract</h2>
+    <div class="right-column">
+      <h2>Paper Overview</h2>
+
+      <h3>Abstract</h3>
       <p>
-        We present Sarc7, a sarcasm benchmark with fine-grained subtype labels and emotion-informed annotations. It supports multi-task evaluation for both classification and generation. Our models demonstrate strong performance boosts from emotional context and subtype guidance.
+        We propose Sarc7, a new benchmark for evaluating sarcasm detection and generation with fine-grained type labels and emotional cues. The dataset enables multi-task learning and targeted modeling of sarcasm styles across rhetorical, emotional, and semantic boundaries.
       </p>
-    </section>
 
-    <section>
-      <h2>Related Work</h2>
+      <h3>Related Works</h3>
       <p>
-        Prior sarcasm research has largely focused on binary detection with limited interpretability. Sarc7 extends this space by introducing structured subtype definitions and emotional grounding to support more expressive modeling.
+        Prior sarcasm datasets have focused on binary labeling. Sarc7 builds on these by incorporating pragmatic theory, emotion modeling, and fine-grained annotations to better reflect sarcasm’s complexity in natural discourse.
       </p>
-    </section>
 
-    <section>
-      <h2>Benchmark Features</h2>
+      <h3>Benchmark Features</h3>
       <ul>
-        <li>7 sarcasm types: hyperbole, rhetorical, understatement, etc.</li>
-        <li>Emotion-informed span annotations</li>
-        <li>Gold and silver label tiers</li>
-        <li>Multi-reference sarcastic generations</li>
+        <li>7 sarcasm subtypes: hyperbole, understatement, rhetorical question, etc.</li>
+        <li>Emotion-informed annotation & model tasks</li>
+        <li>Multi-task learning setup (detection + generation)</li>
       </ul>
-      <img src="img/piechart.png" alt="Sarcasm type distribution pie chart" />
-    </section>
-    <section>
-      <h2>Methodology</h2>
+      <img src="img/piechart.png" alt="Subtype distribution pie chart" />
+
+      <h3>Methodology</h3>
       <p>
-        We fine-tune transformer-based architectures (BERT, RoBERTa) for sarcasm detection and generation tasks. Emotion embeddings are integrated alongside subtype classification heads. Our pipeline incorporates both gold-annotated and distantly-labeled samples to support robustness.
+        We annotated posts using a taxonomy informed by linguistic theory and emotion psychology. Models are trained for subtype classification and sarcasm generation using transformer-based architectures with emotion embeddings.
       </p>
-      <img src="img/classificationpipeline.png" alt="Classification pipeline architecture" />
-    </section>
+      <img src="img/classificationpipeline.png" alt="Classification pipeline diagram" />
 
-    <section>
-      <h2>Results</h2>
+      <h3>Results</h3>
       <p>
-        Emotion-based prompting significantly improves generation quality. Classification F1 and generation BLEU scores show marked gains over baseline models. Below, we show the success rate and sample outputs.
+        Emotion-informed models consistently outperform baselines. Sarcasm subtype classification improves overall interpretability, and generation outputs better reflect nuanced sarcasm intent.
       </p>
-      <img src="img/generationresults.png" alt="Generation success rate using emotion-based prompting" />
-      <img src="img/samplegeneration.png" alt="Example of literal input and sarcastic generation" />
-    </section>
-  </main>
-</div>
-
-<footer>
-  <p>© 2025 Sarc7 Team · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></p>
-</footer>
-
+      <img src="img/generationresults.png" alt="Generation results chart" />
+      <img src="img/samplegeneration.png" alt="Example of sample generation" />
+    </div>
+  </div>
 </body>
 </html>
+
