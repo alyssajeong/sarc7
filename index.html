@@ -7,23 +7,27 @@
 <body>
   <div class="wrapper">
     <div class="left-column">
-      <h1>Sarc7 Dataset</h1>
-      <p>
-        <strong>Sarc7</strong> introduces a richly annotated sarcasm dataset with
-        <strong>seven sarcasm types</strong> and <strong>emotion-informed techniques</strong>
-        for both detection and generation tasks.
-      </p>
+      <h1>Sarc7</h1>
 
-      <a class="button-link" href="data/cleaned_sarcasm_data.json" target="_blank">📥 Download Dataset</a><br>
-      <a class="button-link" href="docs/paper.pdf" target="_blank">📄 Read the Paper</a>
+      <div class="about-box">
+        <h2>About the Paper</h2>
+        <p>
+          Sarc7 introduces a sarcasm benchmark with seven distinct sarcasm types, emotion-informed modeling, and a dataset annotated with nuanced pragmatic cues. The work combines classification and generation tasks and evaluates models across sarcasm subtasks to push sarcasm understanding beyond binary detection.
+        </p>
+        <a class="button-link" href="data/cleaned_sarcasm_data.json" target="_blank">📥 Download Dataset</a><br>
+        <a class="button-link" href="docs/paper.pdf" target="_blank">📄 Read the Paper</a>
+      </div>
 
-      <h2>About the Paper</h2>
-      <p>
-        <em>Sarc7: Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques</em> presents a new benchmark for sarcasm understanding.
-        The dataset includes over 10,000 posts annotated with 7 fine-grained sarcasm types (e.g., rhetorical question, understatement).
-        The paper introduces emotion-informed modeling techniques, explores multi-task learning, and provides detailed generation and classification evaluations.
-        This resource encourages more nuanced understanding of sarcasm in NLP models.
-      </p>
+      <h2>Sarc7 Team</h2>
+      <ul>
+        <li>Lang Xiong</li>
+        <li>Raina Gao</li>
+        <li>Alyssa Jeong</li>
+        <li>Yicheng Fu</li>
+        <li>Sean O'Brien</li>
+        <li>Vasu Sharma</li>
+        <li>Kevin Zhu</li>
+      </ul>
 
       <h2>Citation</h2>
       <pre>@article{xiong2025sarc7,
@@ -35,21 +39,35 @@
     </div>
 
     <div class="right-column">
-      <h2>Authors</h2>
+      <h2>Abstract</h2>
+      <p>
+        We propose Sarc7, a new benchmark for evaluating sarcasm detection and generation with fine-grained type labels and emotional cues. The dataset enables multi-task learning and targeted modeling of sarcasm styles across rhetorical, emotional, and semantic boundaries.
+      </p>
+
+      <h2>Related Works</h2>
+      <p>
+        Prior sarcasm datasets have focused on binary labeling. Sarc7 builds on these by incorporating pragmatic theory, emotion modeling, and fine-grained annotations to better reflect sarcasm’s complexity in natural discourse.
+      </p>
+
+      <h2>Benchmark Features</h2>
       <ul>
-        <li>Lang Xiong</li>
-        <li>Raina Gao</li>
-        <li>Alyssa Jeong</li>
-        <li>Yicheng Fu</li>
-        <li>Sean O'Brien</li>
-        <li>Vasu Sharma</li>
-        <li>Kevin Zhu</li>
+        <li>7 sarcasm subtypes: hyperbole, understatement, rhetorical question, etc.</li>
+        <li>Emotion-informed annotation & model tasks</li>
+        <li>Multi-task learning setup (detection + generation)</li>
       </ul>
 
-      <h2>License</h2>
-      <p>© 2025 Sarc7 Team. Released under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.</p>
+      <h2>Methodology</h2>
+      <p>
+        We annotated posts using a taxonomy informed by linguistic theory and emotion psychology. Models are trained for subtype classification and sarcasm generation using transformer-based architectures with emotion embeddings.
+      </p>
+
+      <h2>Results</h2>
+      <p>
+        Emotion-informed models consistently outperform baselines. Sarcasm subtype classification improves overall interpretability, and generation outputs better reflect nuanced sarcasm intent.
+      </p>
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Simple_Matrix.svg/512px-Simple_Matrix.svg.png" alt="Example Benchmark Visualization">
     </div>
   </div>
 </body>
 </html>
-
