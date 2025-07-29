@@ -1,79 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Sarc7: Sarcasm Dataset</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+
 <body>
-
   <div class="header">
+    <img src="img/sarc7-logo.png" alt="Sarc7 Logo" class="logo">
     <h1>Sarc7</h1>
-    <p>Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques</p>
+    <p>Evaluating Sarcasm Detection and Generation with Seven Types and Emotion‑Informed Techniques</p>
   </div>
-
   <div class="wrapper">
-    <div class="left-column">
-      <div class="about-box">
-        <h2>About the Paper</h2>
-        <p>
-          Sarc7 introduces a sarcasm benchmark with seven distinct sarcasm types, emotion-informed modeling, and a dataset annotated with nuanced pragmatic cues. The work combines classification and generation tasks and evaluates models across sarcasm subtasks to push sarcasm understanding beyond binary detection.
-        </p>
-        <a class="button-link" href="data/cleaned_sarcasm_data.json" target="_blank">📥 Download Dataset</a><br>
-        <a class="button-link" href="docs/paper.pdf" target="_blank">📄 Read the Paper</a>
-      </div>
-
-      <h2>Sarc7 Team</h2>
-      <ul>
-        <li>Lang Xiong</li>
-        <li>Raina Gao</li>
-        <li>Alyssa Jeong</li>
-        <li>Yicheng Fu</li>
-        <li>Sean O'Brien</li>
-        <li>Vasu Sharma</li>
-        <li>Kevin Zhu</li>
-      </ul>
-
-      <h2>Citation</h2>
-      <pre>@article{xiong2025sarc7,
-  title={Sarc7: Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques},
-  author={Xiong, Lang and Gao, Raina and Jeong, Alyssa and Fu, Yicheng and O'Brien, Sean and Sharma, Vasu and Zhu, Kevin},
-  journal={arXiv preprint arXiv:2506.00658},
-  year={2025}
-}</pre>
-    </div>
-
-    <div class="right-column">
-      <h2>Paper Overview</h2>
-
-      <h3>Abstract</h3>
-      <p>
-        We propose Sarc7, a new benchmark for evaluating sarcasm detection and generation with fine-grained type labels and emotional cues. The dataset enables multi-task learning and targeted modeling of sarcasm styles across rhetorical, emotional, and semantic boundaries.
-      </p>
-
-      <h3>Related Works</h3>
-      <p>
-        Prior sarcasm datasets have focused on binary labeling. Sarc7 builds on these by incorporating pragmatic theory, emotion modeling, and fine-grained annotations to better reflect sarcasm’s complexity in natural discourse.
-      </p>
-
-      <h3>Benchmark Features</h3>
-      <ul>
-        <li>7 sarcasm subtypes: hyperbole, understatement, rhetorical question, etc.</li>
-        <li>Emotion-informed annotation & model tasks</li>
-        <li>Multi-task learning setup (detection + generation)</li>
-      </ul>
-
-      <h3>Methodology</h3>
-      <p>
-        We annotated posts using a taxonomy informed by linguistic theory and emotion psychology. Models are trained for subtype classification and sarcasm generation using transformer-based architectures with emotion embeddings.
-      </p>
-
-      <h3>Results</h3>
-      <p>
-        Emotion-informed models consistently outperform baselines. Sarcasm subtype classification improves overall interpretability, and generation outputs better reflect nuanced sarcasm intent.
-      </p>
-
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Simple_Matrix.svg/512px-Simple_Matrix.svg.png" alt="Example Benchmark Visualization">
-    </div>
+    <aside class="left-column">
+      <!-- About + buttons + team + citation -->
+    </aside>
+    <main class="right-column">
+      <section id="overview">
+        <h2>Paper Overview</h2>
+        <h3>Abstract</h3>
+        <p>…</p>
+        <!-- other sections -->
+      </section>
+    </main>
   </div>
 </body>
-</html>

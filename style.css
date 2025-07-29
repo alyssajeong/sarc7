@@ -1,117 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #f8faff, #eef7ff);
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
 .header {
   background: #002f5f;
   color: #cceeff;
-  padding: 2em 1em;
   text-align: center;
+  padding: 2em 1em;
+}
+.header .logo {
+  height: 80px;
+  margin-bottom: 0.5em;
 }
 
-.header h1 {
-  font-size: 3em;
-  margin: 0;
-}
-
-.header p {
-  font-size: 1.2em;
-  margin-top: 0.5em;
-}
-
+/* layout tweaks consistent with Bird‑Bench style */
 .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1100px;
   margin: 2em auto;
   background: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
 
-.left-column {
-  flex: 1 1 33%;
-  background: #ffffff;
+aside.left-column {
+  padding: 2.5em;
   border-right: 1px solid #e0e0e0;
-  padding: 2.5em;
-  box-sizing: border-box;
 }
-
-.right-column {
-  flex: 1 1 67%;
+main.right-column {
+  padding: 2.5em;
   background: #f9fcff;
-  padding: 2.5em;
-  box-sizing: border-box;
 }
 
-h2 {
-  font-size: 1.4em;
-  color: #005b99;
-  margin-top: 1.5em;
+/* Flexibility for mobile screens */
+@media (max-width: 800px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
-p, li {
-  font-size: 1.05em;
-  line-height: 1.6;
-}
-
-.about-box {
-  border: 1px solid #cce6ff;
-  border-radius: 8px;
-  padding: 1em;
-  margin-bottom: 1.5em;
-  background: #f5faff;
-}
-
-ul {
-  padding-left: 1.2em;
-}
-
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.button-link {
-  display: inline-block;
-  margin: 0.5em 0;
-  padding: 0.6em 1.2em;
-  background: #007acc;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.2s;
-}
-
-.button-link:hover {
-  background: #005fa3;
-}
-
-pre {
-  background: #f4f4f4;
-  padding: 1em;
-  font-size: 0.9em;
-  border-left: 4px solid #007acc;
-  border-radius: 6px;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin: 1.5em 0;
+/* Section heading style */
+section#overview h2 {
+  color: #003366;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
 }
