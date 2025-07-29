@@ -1,72 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap');
 
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
+  background: #fffdfc;
   color: #2c2c2c;
-  background: #fdfdfc;
 }
 
 header {
-  background: #2e3d59;
-  color: #dcefff;
+  background: linear-gradient(to right, #6a87c8, #8bb4d1);
+  color: #ffffff;
   text-align: center;
   padding: 2.5rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 header h1 {
-  font-size: 3rem;
   font-family: 'Merriweather', serif;
-  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  margin: 0;
 }
 header p {
   font-size: 1.1rem;
+  margin-top: 0.5rem;
   opacity: 0.95;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 880px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
 }
 
 section {
   background: #ffffff;
-  border: 1px solid #dfe7f3;
-  border-radius: 10px;
-  padding: 1.5rem;
+  border: 1px solid #dde6f3;
+  border-radius: 12px;
+  padding: 1.7rem;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+section:hover {
+  transform: translateY(-2px);
+}
+
+section.highlight {
+  background: #f4faff;
+  border-left: 6px solid #4a90e2;
 }
 
 h2 {
   font-family: 'Merriweather', serif;
-  color: #2e3d59;
   font-size: 1.6rem;
+  color: #354b73;
   margin-top: 0;
-  border-bottom: 2px solid #b3c7e6;
-  padding-bottom: 0.25rem;
-  margin-bottom: 1rem;
+  border-bottom: 2px solid #c2d4ec;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
 }
 
 h3 {
-  color: #3f5a7b;
   font-size: 1.2rem;
+  color: #506a93;
   margin-top: 1.5rem;
 }
 
 ul {
-  padding-left: 1.3rem;
-  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+  line-height: 1.6;
 }
 li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 a {
-  color: #3366cc;
-  text-decoration: none;
+  color: #346ac2;
 }
 a:hover {
   text-decoration: underline;
@@ -74,41 +85,39 @@ a:hover {
 
 .button {
   display: inline-block;
-  background: #4a7ecf;
-  color: white;
+  background: #507edc;
+  color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
   text-decoration: none;
-  margin-right: 0.75rem;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
+  margin-right: 0.5rem;
   font-weight: 600;
+  transition: background 0.2s ease;
 }
 .button:hover {
-  background: #3a68b5;
+  background: #3b66bd;
 }
 
 pre {
-  background: #f4f6fa;
+  background: #f7f9fc;
   padding: 1rem;
   font-size: 0.9rem;
-  overflow-x: auto;
-  border-left: 4px solid #4a7ecf;
+  border-left: 4px solid #6a87c8;
   border-radius: 6px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  overflow-x: auto;
 }
 
 img {
   max-width: 100%;
-  border-radius: 6px;
-  margin-top: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
 }
 
 footer {
-  background: #edf3fa;
+  background: #f0f4fb;
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem;
   font-size: 0.9rem;
   color: #555;
 }
-

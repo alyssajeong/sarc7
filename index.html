@@ -11,87 +11,47 @@
 <header>
   <div class="container">
     <h1>Sarc7</h1>
-    <p>Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques</p>
+    <p>Evaluating Sarcasm Detection &amp; Generation with Seven Types and Emotion-Informed Techniques</p>
   </div>
 </header>
 
 <main class="container">
 
-  <section id="about">
-    <h2>About</h2>
+  <section class="highlight">
+    <h2>📝 About</h2>
     <p>
-      Sarc7 is a benchmark for sarcasm detection and generation. It features seven distinct sarcasm types and emotion-informed annotation, enabling both classification and generation tasks. Our goal is to improve sarcasm understanding by integrating psychological and linguistic theory.
+      <strong>Sarc7</strong> is a benchmark dataset for detecting and generating sarcasm. It includes seven nuanced sarcasm types and emotion-informed labels, enabling research in multi-task learning and interpretability. Designed with both linguistic theory and psychological cues, Sarc7 is a unique contribution to understanding sarcasm in NLP.
     </p>
   </section>
 
-  <section id="tasks">
-    <h2>Tasks</h2>
+  <section>
+    <h2>🎯 Tasks</h2>
     <ul>
-      <li><strong>Detection</strong>: Classify posts as sarcastic or not, and by subtype</li>
-      <li><strong>Generation</strong>: Rewrite or produce sarcastic utterances from literal statements</li>
-      <li><strong>Multi-task</strong>: Jointly learn emotion prediction, subtype detection, and sarcasm intent</li>
+      <li><strong>Sarcasm Detection</strong> — Classify sarcastic vs. non-sarcastic content</li>
+      <li><strong>Subtype Classification</strong> — Predict specific sarcasm categories</li>
+      <li><strong>Generation</strong> — Rewrite literal statements with sarcastic intent</li>
     </ul>
   </section>
 
-  <section id="dataset">
-    <h2>Dataset</h2>
+  <section>
+    <h2>📦 Dataset</h2>
     <p>
-      The dataset includes labeled sarcastic and non-sarcastic social media posts, annotated with:
+      The dataset includes over 10,000 social media posts annotated with:
     </p>
     <ul>
-      <li>One of 7 sarcasm types (e.g., hyperbole, rhetorical question)</li>
-      <li>Emotional cues (e.g., frustration, mockery)</li>
-      <li>Gold and silver standard labels</li>
+      <li>7 sarcasm types (e.g. hyperbole, rhetorical question)</li>
+      <li>Emotion labels: anger, amusement, annoyance, etc.</li>
+      <li>Text spans and generation references</li>
     </ul>
     <a class="button" href="data/cleaned_sarcasm_data.json" target="_blank">📥 Download Dataset</a>
     <a class="button" href="docs/paper.pdf" target="_blank">📄 Read the Paper</a>
   </section>
 
-  <section id="models">
-    <h2>Models</h2>
+  <section>
+    <h2>🤖 Models</h2>
     <p>
-      We evaluate several transformer-based architectures (BERT, RoBERTa) with multi-task heads for subtype classification and sarcasm generation. Emotion-informed embeddings are integrated to improve subtle sarcasm type detection.
+      We evaluate BERT, RoBERTa, and multi-task transformers with subtype classification and generation heads. Emotion-informed embeddings improve sarcasm subtype predictions.
     </p>
   </section>
 
-  <section id="results">
-    <h2>Results</h2>
-    <p>
-      Emotion-informed models outperform baselines by 5–10% across subtype and generation metrics. Our ablations show that sarcasm type prediction significantly boosts interpretability.
-    </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Simple_Matrix.svg/512px-Simple_Matrix.svg.png" alt="Example Evaluation Figure">
-  </section>
-
-  <section id="citation">
-    <h2>Citation</h2>
-    <pre>@article{xiong2025sarc7,
-  title={Sarc7: Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques},
-  author={Xiong, Lang and Gao, Raina and Jeong, Alyssa and Fu, Yicheng and O'Brien, Sean and Sharma, Vasu and Zhu, Kevin},
-  journal={arXiv preprint arXiv:2506.00658},
-  year={2025}
-}</pre>
-  </section>
-
-  <section id="team">
-    <h2>Team</h2>
-    <ul>
-      <li>Lang Xiong</li>
-      <li>Raina Gao</li>
-      <li>Alyssa Jeong</li>
-      <li>Yicheng Fu</li>
-      <li>Sean O'Brien</li>
-      <li>Vasu Sharma</li>
-      <li>Kevin Zhu</li>
-    </ul>
-  </section>
-
-</main>
-
-<footer>
-  <div class="container">
-    <p>© 2025 Sarc7 Team — Released under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></p>
-  </div>
-</footer>
-
-</body>
-</html>
+  <section>
