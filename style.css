@@ -1,42 +1,85 @@
-.header {
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  color: #333;
+  background: #f7f9fb;
+}
+
+header {
   background: #002f5f;
   color: #cceeff;
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 2em 1em;
+}
+header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 
-/* layout tweaks consistent with Bird‑Bench style */
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  max-width: 1100px;
-  margin: 2em auto;
-  background: white;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  border-radius: 12px;
-  overflow: hidden;
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-aside.left-column {
-  padding: 2.5em;
-  border-right: 1px solid #e0e0e0;
-}
-main.right-column {
-  padding: 2.5em;
-  background: #f9fcff;
+main section {
+  margin-bottom: 3rem;
 }
 
-/* Flexibility for mobile screens */
-@media (max-width: 800px) {
-  .wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Section heading style */
-section#overview h2 {
-  color: #003366;
+h2 {
+  font-size: 1.6rem;
   border-bottom: 2px solid #007acc;
-  padding-bottom: 0.3em;
-  margin-bottom: 1em;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+  color: #005b99;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #007acc;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+a.button {
+  display: inline-block;
+  background: #007acc;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin: 0.5rem 0.5rem 0 0;
+  font-weight: bold;
+}
+a.button:hover {
+  background: #005fa3;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+pre {
+  background: #eee;
+  padding: 1rem;
+  overflow-x: auto;
+  border-left: 4px solid #007acc;
+  font-size: 0.9rem;
+}
+
+footer {
+  background: #e6f2ff;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1.5rem 1rem;
+  color: #444;
 }
