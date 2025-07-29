@@ -16,17 +16,64 @@
 </header>
 
 <main class="container">
-  <section>
-    <h2>About the Paper</h2>
+
+  <section id="about">
+    <h2>About</h2>
     <p>
-      Sarc7 introduces a benchmark with seven fine-grained sarcasm types and emotion-informed modeling. It enables nuanced evaluation for both classification and generation. Emotion and linguistic cues help models better interpret sarcastic intent.
+      Sarc7 is a benchmark for sarcasm detection and generation. It features seven distinct sarcasm types and emotion-informed annotation, enabling both classification and generation tasks. Our goal is to improve sarcasm understanding by integrating psychological and linguistic theory.
     </p>
+  </section>
+
+  <section id="tasks">
+    <h2>Tasks</h2>
+    <ul>
+      <li><strong>Detection</strong>: Classify posts as sarcastic or not, and by subtype</li>
+      <li><strong>Generation</strong>: Rewrite or produce sarcastic utterances from literal statements</li>
+      <li><strong>Multi-task</strong>: Jointly learn emotion prediction, subtype detection, and sarcasm intent</li>
+    </ul>
+  </section>
+
+  <section id="dataset">
+    <h2>Dataset</h2>
+    <p>
+      The dataset includes labeled sarcastic and non-sarcastic social media posts, annotated with:
+    </p>
+    <ul>
+      <li>One of 7 sarcasm types (e.g., hyperbole, rhetorical question)</li>
+      <li>Emotional cues (e.g., frustration, mockery)</li>
+      <li>Gold and silver standard labels</li>
+    </ul>
     <a class="button" href="data/cleaned_sarcasm_data.json" target="_blank">📥 Download Dataset</a>
     <a class="button" href="docs/paper.pdf" target="_blank">📄 Read the Paper</a>
   </section>
 
-  <section>
-    <h2>Sarc7 Team</h2>
+  <section id="models">
+    <h2>Models</h2>
+    <p>
+      We evaluate several transformer-based architectures (BERT, RoBERTa) with multi-task heads for subtype classification and sarcasm generation. Emotion-informed embeddings are integrated to improve subtle sarcasm type detection.
+    </p>
+  </section>
+
+  <section id="results">
+    <h2>Results</h2>
+    <p>
+      Emotion-informed models outperform baselines by 5–10% across subtype and generation metrics. Our ablations show that sarcasm type prediction significantly boosts interpretability.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Simple_Matrix.svg/512px-Simple_Matrix.svg.png" alt="Example Evaluation Figure">
+  </section>
+
+  <section id="citation">
+    <h2>Citation</h2>
+    <pre>@article{xiong2025sarc7,
+  title={Sarc7: Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques},
+  author={Xiong, Lang and Gao, Raina and Jeong, Alyssa and Fu, Yicheng and O'Brien, Sean and Sharma, Vasu and Zhu, Kevin},
+  journal={arXiv preprint arXiv:2506.00658},
+  year={2025}
+}</pre>
+  </section>
+
+  <section id="team">
+    <h2>Team</h2>
     <ul>
       <li>Lang Xiong</li>
       <li>Raina Gao</li>
@@ -38,45 +85,11 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Paper Overview</h2>
-
-    <h3>Abstract</h3>
-    <p>We introduce Sarc7, a sarcasm benchmark dataset with subtype classification and generation tasks. The dataset contains emotion-informed labels, fine-grained sarcasm types, and enables multi-task training for interpretability.</p>
-
-    <h3>Related Work</h3>
-    <p>Past sarcasm datasets focus on binary detection. Sarc7 goes beyond this by including pragmatic and emotional factors, along with subtype-level distinctions that reflect natural sarcasm use.</p>
-
-    <h3>Benchmark Features</h3>
-    <ul>
-      <li>7 sarcasm subtypes (e.g. hyperbole, rhetorical question)</li>
-      <li>Emotion annotation & multi-task labels</li>
-      <li>Supports generation & classification</li>
-    </ul>
-
-    <h3>Methodology</h3>
-    <p>We annotated social media posts using sarcasm typologies and emotion cues. Transformer models were trained on both subtype classification and sarcasm generation using emotional embeddings.</p>
-
-    <h3>Results</h3>
-    <p>Emotion-aware models outperformed all baselines. Generation tasks improved significantly with emotion guidance, and subtype modeling improved interpretability and generalization.</p>
-
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Simple_Matrix.svg/512px-Simple_Matrix.svg.png" alt="Sample Result" />
-  </section>
-
-  <section>
-    <h2>Citation</h2>
-    <pre>@article{xiong2025sarc7,
-  title={Sarc7: Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques},
-  author={Xiong, Lang and Gao, Raina and Jeong, Alyssa and Fu, Yicheng and O'Brien, Sean and Sharma, Vasu and Zhu, Kevin},
-  journal={arXiv preprint arXiv:2506.00658},
-  year={2025}
-}</pre>
-  </section>
 </main>
 
 <footer>
   <div class="container">
-    <p>© 2025 Sarc7 Team · Released under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+    <p>© 2025 Sarc7 Team — Released under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></p>
   </div>
 </footer>
 
